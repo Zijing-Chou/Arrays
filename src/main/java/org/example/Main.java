@@ -50,6 +50,7 @@ public class Main {
                     }
                     break;
                 case 4:
+                    System.out.println("\\nExiting:\\n");
                     break;
                 default:
                     System.out.println("Invalid choice");
