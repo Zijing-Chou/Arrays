@@ -4,16 +4,12 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-
         Scanner reader = new Scanner(System.in);
-
         System.out.println("Enter your ID:");
         String id = reader.nextLine();
-
         System.out.println("Enter your name:");
         String name = reader.nextLine();
         int choice;
-
         Student student = new Student(id, name);
 
         do {
@@ -45,6 +41,7 @@ public class Main {
                         students[i].addStudent(i + 1);
                     }
                     System.out.println("\\nHere are the new students you added:\\n");
+                    
                     for (int i = 0; i < students.length; i++) {
                         students[i].displayStudent(i + 1);
                     }
